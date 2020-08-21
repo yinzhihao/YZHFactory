@@ -16,4 +16,8 @@ FOUNDATION_EXPORT const unsigned char YZHFactoryVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YZHFactory/PublicHeader.h>
 
+#import <YZHFactory/UIViewController+YZHCaregory.h>
+#import <YZHFactory/YZHConvertUtils.h>
+#import <YZHFactory/YZHDefine.h>
+#import <YZHFactory/YZHFileManager.h>
 

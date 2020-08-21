@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */; };
+		30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */; };
+		30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */; };
+		30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9024EF639A0022BD70 /* YZHConvertUtils.h */; };
+		30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9324EF63A20022BD70 /* YZHDefine.h */; };
+		30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9524EF63AB0022BD70 /* YZHFileManager.h */; };
+		30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A9624EF63AB0022BD70 /* YZHFileManager.m */; };
 		308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YZHCaregory.h"; sourceTree = "<group>"; };
+		30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YZHCaregory.m"; sourceTree = "<group>"; };
+		30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHConvertUtils.m; sourceTree = "<group>"; };
+		30001A9024EF639A0022BD70 /* YZHConvertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHConvertUtils.h; sourceTree = "<group>"; };
+		30001A9324EF63A20022BD70 /* YZHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHDefine.h; sourceTree = "<group>"; };
+		30001A9524EF63AB0022BD70 /* YZHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHFileManager.h; sourceTree = "<group>"; };
+		30001A9624EF63AB0022BD70 /* YZHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHFileManager.m; sourceTree = "<group>"; };
 		308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZHFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHFactory.h; sourceTree = "<group>"; };
 		308B5E8424EBCEB7004E9CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +41,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3029E81B24ED2E310088A112 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30001A9024EF639A0022BD70 /* YZHConvertUtils.h */,
+				30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		3029E81C24ED2E510088A112 /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frame;
+			sourceTree = "<group>";
+		};
+		3029E81D24ED2E6A0088A112 /* SourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */,
+				308B5E8424EBCEB7004E9CC4 /* Info.plist */,
+			);
+			name = SourceFiles;
+			sourceTree = "<group>";
+		};
+		3029E81E24ED2E7D0088A112 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3029E82324ED2F000088A112 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				30001A9324EF63A20022BD70 /* YZHDefine.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
+		3029E82424ED2F210088A112 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				30001A9524EF63AB0022BD70 /* YZHFileManager.h */,
+				30001A9624EF63AB0022BD70 /* YZHFileManager.m */,
+			);
+			name = FileManager;
+			sourceTree = "<group>";
+		};
+		3029E82F24EE08EF0088A112 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */,
+				30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		308B5E7624EBCEB6004E9CC4 = {
 			isa = PBXGroup;
 			children = (
@@ -46,8 +118,13 @@
 		308B5E8224EBCEB7004E9CC4 /* YZHFactory */ = {
 			isa = PBXGroup;
 			children = (
-				308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */,
-				308B5E8424EBCEB7004E9CC4 /* Info.plist */,
+				3029E82F24EE08EF0088A112 /* Category */,
+				3029E82324ED2F000088A112 /* Define */,
+				3029E82424ED2F210088A112 /* FileManager */,
+				3029E81C24ED2E510088A112 /* Frame */,
+				3029E81D24ED2E6A0088A112 /* SourceFiles */,
+				3029E81E24ED2E7D0088A112 /* UI */,
+				3029E81B24ED2E310088A112 /* Utils */,
 			);
 			path = YZHFactory;
 			sourceTree = "<group>";
@@ -60,6 +137,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */,
+				30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */,
+				30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */,
+				30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */,
+				30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +171,7 @@
 		308B5E7724EBCEB7004E9CC4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YZH;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "NO NAME";
 				TargetAttributes = {
@@ -131,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */,
+				30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */,
+				30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -256,12 +341,29 @@
 		308B5E8924EBCEB7004E9CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MBB6RBH9JT;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				INFOPLIST_FILE = YZHFactory/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -269,23 +371,48 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0.1;
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 			};
 			name = Debug;
 		};
 		308B5E8A24EBCEB7004E9CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = "bitcode\n";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MBB6RBH9JT;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				INFOPLIST_FILE = YZHFactory/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,11 +420,18 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0.1;
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wno-unused-parameter",
+				);
 			};
 			name = Release;
 		};
