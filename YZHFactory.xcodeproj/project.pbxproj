@@ -372,7 +372,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -421,7 +421,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

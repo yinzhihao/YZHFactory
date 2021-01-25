@@ -41,9 +41,12 @@
 #define kScreenSize \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale) : [UIScreen mainScreen].bounds.size)
 
-#define IS_IPHONEX_XS   (kScreenHeight == 812.f)  //是否是iPhoneX、iPhoneXS
-#define IS_IPHONEXR_XSMax   (kScreenHeight == 896.f)  //是否是iPhoneXR、iPhoneX Max
-#define IS_IPHONEX_SET  (IS_IPHONEX_XS||IS_IPHONEXR_XSMax)  //是否是iPhoneX系列手机
+#define IS_IPHONE_X_XS   (kScreenHeight == 812.f)  //是否是iPhoneX、iPhoneXS、iPhone11 Pro
+#define IS_IPHONE_XR_XSMax   (kScreenHeight == 896.f)  //是否是iPhoneXR、iPhoneXS Max、iPhone 11、11Pro Max
+#define IS_IPHONE12_MINI   (kScreenHeight == 780.f)    //是否是iPhone 12 mini
+#define IS_IPHONE12  (kScreenHeight == 844.f)    //是否是iPhone 12、12 Pro
+#define IS_IPHONE12_ProMax  (kScreenHeight == 926.f)    //是否是iPhone 12 Pro Max
+#define IS_IPHONEX_SET  (IS_IPHONEX_XS||IS_IPHONEXR_XSMax||IS_IPHONE12_MINI||IS_IPHONE12||IS_IPHONE12_ProMax)  //是否是iPhoneX系列手机
 
 /** 获取状态栏高度 */
 #define State_Bar_H  ((![[UIApplication sharedApplication] isStatusBarHidden]) ? [[UIApplication sharedApplication] statusBarFrame].size.height : (IS_IPHONEX_SET?44.f:20.f))
@@ -116,16 +119,16 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 // Block
 #define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };
 
-//#define SINGLETON_FOR_HEADER( ... ) \
-//+ (instancetype)sharedInstance;
-//
-//#define SINGLETON_FOR_CLASS( ... ) \
-//+ (instancetype)sharedInstance{ \
-//static dispatch_once_t once; \
-//static id __singleton__; \
-//dispatch_once( &once, ^{ __singleton__ = [[self alloc] init]; } ); \
-//return __singleton__; \
-//}
+#define SINGLETON_FOR_HEADER( ... ) \
++ (instancetype)shared;
+
+#define SINGLETON_FOR_CLASS( ... ) \
++ (instancetype)shared{ \
+static dispatch_once_t once; \
+static id __singleton__; \
+dispatch_once( &once, ^{ __singleton__ = [[self alloc] init]; } ); \
+return __singleton__; \
+}
 
 
 #endif /* YZHDefine_h */
