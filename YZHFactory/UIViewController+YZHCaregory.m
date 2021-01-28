@@ -2,7 +2,7 @@
 //  UIViewController+YZHCaregory.m
 //  YZHFactory
 //
-//  Created by NO NAME on 2020/8/6.
+//  Created by 殷志豪 on 2020/8/6.
 //  Copyright © 2020 yinzhihao. All rights reserved.
 //
 

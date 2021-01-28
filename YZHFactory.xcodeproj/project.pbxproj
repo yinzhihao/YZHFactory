@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */; };
+		30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */; };
 		30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */; };
 		30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9024EF639A0022BD70 /* YZHConvertUtils.h */; };
 		30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9324EF63A20022BD70 /* YZHDefine.h */; };
-		30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9524EF63AB0022BD70 /* YZHFileManager.h */; };
+		30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9524EF63AB0022BD70 /* YZHFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A9624EF63AB0022BD70 /* YZHFileManager.m */; };
+		30839C4A25BEBEDE0025CA14 /* UIView+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C4B25BEBEDE0025CA14 /* UIView+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */; };
+		30839C4E25BECC830025CA14 /* YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4D25BECC830025CA14 /* YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C5B25BECDC70025CA14 /* UIButton+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C5925BECDC70025CA14 /* UIButton+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C5C25BECDC70025CA14 /* UIButton+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C5A25BECDC70025CA14 /* UIButton+YZHCategory.m */; };
+		30839C6225BFAC7E0025CA14 /* UIColor+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C6025BFAC7E0025CA14 /* UIColor+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C6325BFAC7E0025CA14 /* UIColor+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C6125BFAC7E0025CA14 /* UIColor+YZHCategory.m */; };
+		30839C6B25BFFB2F0025CA14 /* UILabel+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C6925BFFB2F0025CA14 /* UILabel+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C6C25BFFB2F0025CA14 /* UILabel+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C6A25BFFB2F0025CA14 /* UILabel+YZHCategory.m */; };
+		30839C7925C01BEF0025CA14 /* NSString+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C7725C01BEF0025CA14 /* NSString+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30839C7A25C01BEF0025CA14 /* NSString+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C7825C01BEF0025CA14 /* NSString+YZHCategory.m */; };
 		308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -25,6 +36,17 @@
 		30001A9324EF63A20022BD70 /* YZHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHDefine.h; sourceTree = "<group>"; };
 		30001A9524EF63AB0022BD70 /* YZHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHFileManager.h; sourceTree = "<group>"; };
 		30001A9624EF63AB0022BD70 /* YZHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHFileManager.m; sourceTree = "<group>"; };
+		30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHCategory.h"; sourceTree = "<group>"; };
+		30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHCategory.m"; sourceTree = "<group>"; };
+		30839C4D25BECC830025CA14 /* YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHCategory.h; sourceTree = "<group>"; };
+		30839C5925BECDC70025CA14 /* UIButton+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YZHCategory.h"; sourceTree = "<group>"; };
+		30839C5A25BECDC70025CA14 /* UIButton+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YZHCategory.m"; sourceTree = "<group>"; };
+		30839C6025BFAC7E0025CA14 /* UIColor+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YZHCategory.h"; sourceTree = "<group>"; };
+		30839C6125BFAC7E0025CA14 /* UIColor+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YZHCategory.m"; sourceTree = "<group>"; };
+		30839C6925BFFB2F0025CA14 /* UILabel+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+YZHCategory.h"; sourceTree = "<group>"; };
+		30839C6A25BFFB2F0025CA14 /* UILabel+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YZHCategory.m"; sourceTree = "<group>"; };
+		30839C7725C01BEF0025CA14 /* NSString+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YZHCategory.h"; sourceTree = "<group>"; };
+		30839C7825C01BEF0025CA14 /* NSString+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YZHCategory.m"; sourceTree = "<group>"; };
 		308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZHFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHFactory.h; sourceTree = "<group>"; };
 		308B5E8424EBCEB7004E9CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,13 +70,6 @@
 				30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */,
 			);
 			name = Utils;
-			sourceTree = "<group>";
-		};
-		3029E81C24ED2E510088A112 /* Frame */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frame;
 			sourceTree = "<group>";
 		};
 		3029E81D24ED2E6A0088A112 /* SourceFiles */ = {
@@ -90,13 +105,24 @@
 			name = FileManager;
 			sourceTree = "<group>";
 		};
-		3029E82F24EE08EF0088A112 /* Category */ = {
+		3029E82F24EE08EF0088A112 /* UIKit+Category */ = {
 			isa = PBXGroup;
 			children = (
+				30839C7725C01BEF0025CA14 /* NSString+YZHCategory.h */,
+				30839C7825C01BEF0025CA14 /* NSString+YZHCategory.m */,
+				30839C5925BECDC70025CA14 /* UIButton+YZHCategory.h */,
+				30839C5A25BECDC70025CA14 /* UIButton+YZHCategory.m */,
+				30839C6025BFAC7E0025CA14 /* UIColor+YZHCategory.h */,
+				30839C6125BFAC7E0025CA14 /* UIColor+YZHCategory.m */,
+				30839C6925BFFB2F0025CA14 /* UILabel+YZHCategory.h */,
+				30839C6A25BFFB2F0025CA14 /* UILabel+YZHCategory.m */,
+				30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */,
+				30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */,
 				30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */,
 				30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */,
+				30839C4D25BECC830025CA14 /* YZHCategory.h */,
 			);
-			name = Category;
+			name = "UIKit+Category";
 			sourceTree = "<group>";
 		};
 		308B5E7624EBCEB6004E9CC4 = {
@@ -118,10 +144,9 @@
 		308B5E8224EBCEB7004E9CC4 /* YZHFactory */ = {
 			isa = PBXGroup;
 			children = (
-				3029E82F24EE08EF0088A112 /* Category */,
+				3029E82F24EE08EF0088A112 /* UIKit+Category */,
 				3029E82324ED2F000088A112 /* Define */,
 				3029E82424ED2F210088A112 /* FileManager */,
-				3029E81C24ED2E510088A112 /* Frame */,
 				3029E81D24ED2E6A0088A112 /* SourceFiles */,
 				3029E81E24ED2E7D0088A112 /* UI */,
 				3029E81B24ED2E310088A112 /* Utils */,
@@ -137,10 +162,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */,
+				30839C6225BFAC7E0025CA14 /* UIColor+YZHCategory.h in Headers */,
 				30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */,
+				30839C5B25BECDC70025CA14 /* UIButton+YZHCategory.h in Headers */,
 				30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */,
 				30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */,
+				30839C4E25BECC830025CA14 /* YZHCategory.h in Headers */,
+				30839C6B25BFFB2F0025CA14 /* UILabel+YZHCategory.h in Headers */,
+				30839C7925C01BEF0025CA14 /* NSString+YZHCategory.h in Headers */,
 				30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */,
+				30839C4A25BEBEDE0025CA14 /* UIView+YZHCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +204,7 @@
 			attributes = {
 				CLASSPREFIX = YZH;
 				LastUpgradeCheck = 1160;
-				ORGANIZATIONNAME = "NO NAME";
+				ORGANIZATIONNAME = yzh;
 				TargetAttributes = {
 					308B5E7F24EBCEB7004E9CC4 = {
 						CreatedOnToolsVersion = 11.6;
@@ -213,9 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30839C4B25BEBEDE0025CA14 /* UIView+YZHCategory.m in Sources */,
+				30839C6325BFAC7E0025CA14 /* UIColor+YZHCategory.m in Sources */,
+				30839C6C25BFFB2F0025CA14 /* UILabel+YZHCategory.m in Sources */,
 				30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */,
 				30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */,
+				30839C7A25C01BEF0025CA14 /* NSString+YZHCategory.m in Sources */,
 				30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */,
+				30839C5C25BECDC70025CA14 /* UIButton+YZHCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,12 +408,13 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-Wextra",
@@ -421,12 +458,13 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = (
 					"-Wall",
 					"-Wextra",
