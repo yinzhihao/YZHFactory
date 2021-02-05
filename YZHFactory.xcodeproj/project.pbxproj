@@ -10,8 +10,8 @@
 		30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */; };
 		30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */; };
-		30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9024EF639A0022BD70 /* YZHConvertUtils.h */; };
-		30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9324EF63A20022BD70 /* YZHDefine.h */; };
+		30001A9224EF639A0022BD70 /* YZHConvertUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9024EF639A0022BD70 /* YZHConvertUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9324EF63A20022BD70 /* YZHDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9524EF63AB0022BD70 /* YZHFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A9624EF63AB0022BD70 /* YZHFileManager.m */; };
 		30839C4A25BEBEDE0025CA14 /* UIView+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +25,12 @@
 		30839C6C25BFFB2F0025CA14 /* UILabel+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C6A25BFFB2F0025CA14 /* UILabel+YZHCategory.m */; };
 		30839C7925C01BEF0025CA14 /* NSString+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C7725C01BEF0025CA14 /* NSString+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30839C7A25C01BEF0025CA14 /* NSString+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C7825C01BEF0025CA14 /* NSString+YZHCategory.m */; };
+		30839CD125C257920025CA14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839CD025C257920025CA14 /* AppDelegate.m */; };
+		30839CD725C257920025CA14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839CD625C257920025CA14 /* ViewController.m */; };
+		30839CDA25C257920025CA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30839CD825C257920025CA14 /* Main.storyboard */; };
+		30839CDC25C257960025CA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30839CDB25C257960025CA14 /* Assets.xcassets */; };
+		30839CDF25C257960025CA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30839CDD25C257960025CA14 /* LaunchScreen.storyboard */; };
+		30839CE225C257960025CA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839CE125C257960025CA14 /* main.m */; };
 		308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,12 +53,29 @@
 		30839C6A25BFFB2F0025CA14 /* UILabel+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YZHCategory.m"; sourceTree = "<group>"; };
 		30839C7725C01BEF0025CA14 /* NSString+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YZHCategory.h"; sourceTree = "<group>"; };
 		30839C7825C01BEF0025CA14 /* NSString+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YZHCategory.m"; sourceTree = "<group>"; };
+		30839CCD25C257920025CA14 /* YZHFactoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZHFactoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30839CCF25C257920025CA14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30839CD025C257920025CA14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30839CD525C257920025CA14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30839CD625C257920025CA14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30839CD925C257920025CA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30839CDB25C257960025CA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30839CDE25C257960025CA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30839CE025C257960025CA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30839CE125C257960025CA14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZHFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHFactory.h; sourceTree = "<group>"; };
 		308B5E8424EBCEB7004E9CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		30839CCA25C257920025CA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		308B5E7D24EBCEB7004E9CC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,10 +148,27 @@
 			name = "UIKit+Category";
 			sourceTree = "<group>";
 		};
+		30839CCE25C257920025CA14 /* YZHFactoryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				30839CCF25C257920025CA14 /* AppDelegate.h */,
+				30839CD025C257920025CA14 /* AppDelegate.m */,
+				30839CD525C257920025CA14 /* ViewController.h */,
+				30839CD625C257920025CA14 /* ViewController.m */,
+				30839CD825C257920025CA14 /* Main.storyboard */,
+				30839CDB25C257960025CA14 /* Assets.xcassets */,
+				30839CDD25C257960025CA14 /* LaunchScreen.storyboard */,
+				30839CE025C257960025CA14 /* Info.plist */,
+				30839CE125C257960025CA14 /* main.m */,
+			);
+			path = YZHFactoryDemo;
+			sourceTree = "<group>";
+		};
 		308B5E7624EBCEB6004E9CC4 = {
 			isa = PBXGroup;
 			children = (
 				308B5E8224EBCEB7004E9CC4 /* YZHFactory */,
+				30839CCE25C257920025CA14 /* YZHFactoryDemo */,
 				308B5E8124EBCEB7004E9CC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */,
+				30839CCD25C257920025CA14 /* YZHFactoryDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +219,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		30839CCC25C257920025CA14 /* YZHFactoryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30839CE525C257960025CA14 /* Build configuration list for PBXNativeTarget "YZHFactoryDemo" */;
+			buildPhases = (
+				30839CC925C257920025CA14 /* Sources */,
+				30839CCA25C257920025CA14 /* Frameworks */,
+				30839CCB25C257920025CA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YZHFactoryDemo;
+			productName = YZHFactoryDemo;
+			productReference = 30839CCD25C257920025CA14 /* YZHFactoryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		308B5E7F24EBCEB7004E9CC4 /* YZHFactory */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 308B5E8824EBCEB7004E9CC4 /* Build configuration list for PBXNativeTarget "YZHFactory" */;
@@ -206,6 +264,9 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = yzh;
 				TargetAttributes = {
+					30839CCC25C257920025CA14 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					308B5E7F24EBCEB7004E9CC4 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -225,11 +286,22 @@
 			projectRoot = "";
 			targets = (
 				308B5E7F24EBCEB7004E9CC4 /* YZHFactory */,
+				30839CCC25C257920025CA14 /* YZHFactoryDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		30839CCB25C257920025CA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30839CDF25C257960025CA14 /* LaunchScreen.storyboard in Resources */,
+				30839CDC25C257960025CA14 /* Assets.xcassets in Resources */,
+				30839CDA25C257920025CA14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		308B5E7E24EBCEB7004E9CC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +312,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30839CC925C257920025CA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30839CD725C257920025CA14 /* ViewController.m in Sources */,
+				30839CD125C257920025CA14 /* AppDelegate.m in Sources */,
+				30839CE225C257960025CA14 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		308B5E7C24EBCEB7004E9CC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,7 +339,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		30839CD825C257920025CA14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30839CD925C257920025CA14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30839CDD25C257960025CA14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30839CDE25C257960025CA14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		30839CE325C257960025CA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBB6RBH9JT;
+				INFOPLIST_FILE = YZHFactoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactoryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30839CE425C257960025CA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBB6RBH9JT;
+				INFOPLIST_FILE = YZHFactoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactoryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		308B5E8624EBCEB7004E9CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		30839CE525C257960025CA14 /* Build configuration list for PBXNativeTarget "YZHFactoryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30839CE325C257960025CA14 /* Debug */,
+				30839CE425C257960025CA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		308B5E7A24EBCEB7004E9CC4 /* Build configuration list for PBXProject "YZHFactory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
