@@ -43,10 +43,10 @@
 
 #define IS_IPHONE_X_XS   (kScreenHeight == 812.f)  //是否是iPhoneX、iPhoneXS、iPhone11 Pro
 #define IS_IPHONE_XR_XSMax   (kScreenHeight == 896.f)  //是否是iPhoneXR、iPhoneXS Max、iPhone 11、11Pro Max
-#define IS_IPHONE12_MINI   (kScreenHeight == 780.f)    //是否是iPhone 12 mini
+#define IS_IPHONE12_MINI   (kScreenHeight == 812.f)    //是否是iPhone 12 mini
 #define IS_IPHONE12  (kScreenHeight == 844.f)    //是否是iPhone 12、12 Pro
 #define IS_IPHONE12_ProMax  (kScreenHeight == 926.f)    //是否是iPhone 12 Pro Max
-#define IS_IPHONEX_SET  (IS_IPHONEX_XS||IS_IPHONEXR_XSMax||IS_IPHONE12_MINI||IS_IPHONE12||IS_IPHONE12_ProMax)  //是否是iPhoneX系列手机
+#define IS_IPHONEX_SET  (IS_IPHONE_X_XS||IS_IPHONE_XR_XSMax||IS_IPHONE12_MINI||IS_IPHONE12||IS_IPHONE12_ProMax)  //是否是iPhoneX系列手机
 
 /** 获取状态栏高度 */
 #define State_Bar_H  ((![[UIApplication sharedApplication] isStatusBarHidden]) ? [[UIApplication sharedApplication] statusBarFrame].size.height : (IS_IPHONEX_SET?44.f:20.f))
