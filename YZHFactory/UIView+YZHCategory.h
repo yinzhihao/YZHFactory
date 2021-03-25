@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface UIView (YZHCategory)
 
 @property (nonatomic, assign) CGFloat x;
@@ -19,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
-@end
+#pragma mark - 截图
+- (UIImage *)captureImage;
 
-NS_ASSUME_NONNULL_END
+@end

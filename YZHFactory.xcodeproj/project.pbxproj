@@ -14,6 +14,8 @@
 		30001A9424EF63A20022BD70 /* YZHDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9324EF63A20022BD70 /* YZHDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A9724EF63AB0022BD70 /* YZHFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30001A9524EF63AB0022BD70 /* YZHFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A9624EF63AB0022BD70 /* YZHFileManager.m */; };
+		306A57FA25DFB5C700D0A876 /* UIImage+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 306A57F825DFB5C700D0A876 /* UIImage+YZHCategory.h */; };
+		306A57FB25DFB5C700D0A876 /* UIImage+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 306A57F925DFB5C700D0A876 /* UIImage+YZHCategory.m */; };
 		30839C4A25BEBEDE0025CA14 /* UIView+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30839C4B25BEBEDE0025CA14 /* UIView+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */; };
 		30839C4E25BECC830025CA14 /* YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4D25BECC830025CA14 /* YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +44,8 @@
 		30001A9324EF63A20022BD70 /* YZHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHDefine.h; sourceTree = "<group>"; };
 		30001A9524EF63AB0022BD70 /* YZHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHFileManager.h; sourceTree = "<group>"; };
 		30001A9624EF63AB0022BD70 /* YZHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHFileManager.m; sourceTree = "<group>"; };
+		306A57F825DFB5C700D0A876 /* UIImage+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YZHCategory.h"; sourceTree = "<group>"; };
+		306A57F925DFB5C700D0A876 /* UIImage+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YZHCategory.m"; sourceTree = "<group>"; };
 		30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YZHCategory.h"; sourceTree = "<group>"; };
 		30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YZHCategory.m"; sourceTree = "<group>"; };
 		30839C4D25BECC830025CA14 /* YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHCategory.h; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */,
 				30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */,
 				30839C4D25BECC830025CA14 /* YZHCategory.h */,
+				306A57F825DFB5C700D0A876 /* UIImage+YZHCategory.h */,
+				306A57F925DFB5C700D0A876 /* UIImage+YZHCategory.m */,
 			);
 			name = "UIKit+Category";
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306A57FA25DFB5C700D0A876 /* UIImage+YZHCategory.h in Headers */,
 				308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */,
 				30839C6225BFAC7E0025CA14 /* UIColor+YZHCategory.h in Headers */,
 				30001A8D24EF63920022BD70 /* UIViewController+YZHCaregory.h in Headers */,
@@ -332,6 +339,7 @@
 				30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */,
 				30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */,
 				30839C7A25C01BEF0025CA14 /* NSString+YZHCategory.m in Sources */,
+				306A57FB25DFB5C700D0A876 /* UIImage+YZHCategory.m in Sources */,
 				30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */,
 				30839C5C25BECDC70025CA14 /* UIButton+YZHCategory.m in Sources */,
 			);
@@ -549,7 +557,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -599,7 +607,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = mh_dylib;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsmart.YZHFactory;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

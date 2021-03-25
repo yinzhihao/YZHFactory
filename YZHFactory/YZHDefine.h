@@ -22,99 +22,87 @@
 #define USER_DEFAULT_SET(value, key) [USER_DEFAULT setObject:value forKey:key];
 
 //字符串是否为空
-#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] == 0 ? YES : NO )
+#define STRING_IS_EMPTY(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] == 0 ? YES : NO )
 //数组是否为空
-#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+#define ARRAY_IS_EMPTY(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
 //字典是否为空
-#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+#define DICT_IS_EMPTY(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
 //是否是空对象
-#define kObjectIsEmpty(_object) (_object == nil \
+#define OBJECT_IS_EMPTY(_object) (_object == nil \
 || [_object isKindOfClass:[NSNull class]] \
 || ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
 || ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
 
 //获取屏幕宽度与高度
-#define kScreenWidth \
+#define SCREEN_WIDTH \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.width)
-#define kScreenHeight \
+#define SCREEN_HEIGHT \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.height)
-#define kScreenSize \
+#define SCREEN_SIZE \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale) : [UIScreen mainScreen].bounds.size)
 
-#define IS_IPHONE_X_XS   (kScreenHeight == 812.f)  //是否是iPhoneX、iPhoneXS、iPhone11 Pro
-#define IS_IPHONE_XR_XSMax   (kScreenHeight == 896.f)  //是否是iPhoneXR、iPhoneXS Max、iPhone 11、11Pro Max
-#define IS_IPHONE12_MINI   (kScreenHeight == 812.f)    //是否是iPhone 12 mini
-#define IS_IPHONE12  (kScreenHeight == 844.f)    //是否是iPhone 12、12 Pro
-#define IS_IPHONE12_ProMax  (kScreenHeight == 926.f)    //是否是iPhone 12 Pro Max
+#define IPHONE_6S 375.f
+#define SCALE_WIDTH (SCREEN_WIDTH / IPHONE_6S)
+
+#define IS_IPHONE_X_XS   (SCREEN_WIDTH == 812.f)  //是否是iPhoneX、iPhoneXS、iPhone11 Pro
+#define IS_IPHONE_XR_XSMax   (SCREEN_WIDTH == 896.f)  //是否是iPhoneXR、iPhoneXS Max、iPhone 11、11Pro Max
+#define IS_IPHONE12_MINI   (SCREEN_WIDTH == 812.f)    //是否是iPhone 12 mini
+#define IS_IPHONE12  (SCREEN_WIDTH == 844.f)    //是否是iPhone 12、12 Pro
+#define IS_IPHONE12_ProMax  (SCREEN_WIDTH == 926.f)    //是否是iPhone 12 Pro Max
 #define IS_IPHONEX_SET  (IS_IPHONE_X_XS||IS_IPHONE_XR_XSMax||IS_IPHONE12_MINI||IS_IPHONE12||IS_IPHONE12_ProMax)  //是否是iPhoneX系列手机
 
 /** 获取状态栏高度 */
-#define State_Bar_H  ((![[UIApplication sharedApplication] isStatusBarHidden]) ? [[UIApplication sharedApplication] statusBarFrame].size.height : (IS_IPHONEX_SET?44.f:20.f))
-#define NavigationBarHeight 44.0f
-#define StatusBarWithNavigationBarHeight (State_Bar_H+NavigationBarHeight)
-#define TabBarHeight (IS_IPHONEX_SET ? 83.0f : 49.0f)
-
-//一些缩写
-#define kApplication        [UIApplication sharedApplication]
-#define kKeyWindow          [UIApplication sharedApplication].keyWindow
-#define kAppDelegate        [UIApplication sharedApplication].delegate
-#define kUserDefaults       [NSUserDefaults standardUserDefaults]
-#define kNotificationCenter [NSNotificationCenter defaultCenter]
+#define STATUS_BAR_HEIGHT  ((![[UIApplication sharedApplication] isStatusBarHidden]) ? [[UIApplication sharedApplication] statusBarFrame].size.height : (IS_IPHONEX_SET?44.f:20.f))
+#define NAVIGATION_BAR_HEIGHT 44.0f
+#define TABBAR_HEIGHT (IS_IPHONEX_SET ? 83.0f : 49.0f)
+#define SAFE_BOTTOM_HEIGHT (IS_IPHONEX_SET ? 34.0f : 0)
 
 //APP版本号
-#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 //系统版本号
-#define kSystemVersion [[UIDevice currentDevice] systemVersion]
+#define SYSTEM_VERSION [[UIDevice currentDevice] systemVersion]
 //获取当前语言
-#define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
-//判断是否为iPhone
-#define kISiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-//判断是否为iPad
-#define kISiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define CURRENT_LANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 //获取沙盒Document路径
-#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+#define DOCUMENT_PATH [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 //获取沙盒temp路径
-#define kTempPath NSTemporaryDirectory()
+#define TEMP_PATH NSTemporaryDirectory()
 //获取沙盒Cache路径
-#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
-
-//判断是真机还是模拟器
-#if TARGET_OS_IPHONE
-//真机
-#endif
-
-#if TARGET_IPHONE_SIMULATOR
-//模拟器
-#endif
+#define CACHE_PATH [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
 //颜色
-#define kRGBColor(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define kRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
-#define kRandomColor           kRGBColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
-
-#define kColorWithHex(rgbValue) \
+#define RGB_COLOR(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBA_COLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
+#define RANDOM_COLOR           RGB_COLOR(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+#define COLOR_WITH_HEX(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 \
 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
-//由角度转换弧度
-#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
-//由弧度转换角度
-#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+//字体
+#define FONT_SYSTEM(size) [UIFont systemFontOfSize:size]
+#define FONT_HELVETICA(size) [UIFont fontWithName:@"Helvetica" size:size]
+#define FONT_HELVETICA_BOLD(size) [UIFont fontWithName:@"Helvetica-Bold" size:size]
+#define FONT_PINGFANG_SC(size) [UIFont fontWithName:@"PingFangSC" size:size]
 
-#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o
+//由角度转换弧度
+#define DEGREES_TO_RADIAN(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define RADIAN_TO_DEGREES(radian) (radian * 180.0) / (M_PI)
+
+#define WO(o) autoreleasepool{} __weak typeof(o) o##Weak = o
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define SS(strongSelf)  __strong __typeof(&*weakSelf)strongSelf = self;
 
 //国际化
-#define kLocalizedString(key) NSLocalizedStringFromTableInBundle(key, @"Localizable", [NSBundle mainBundle], nil) //默认mainBundle
-#define kLocalizedStringInBundle(key, bundle) NSLocalizedStringFromTableInBundle(key, @"Localizable", bundle, nil) //bundle自定义
-#define kLocalizedStringFromTableInBundle(key, table, bundle, comment) NSLocalizedStringFromTableInBundle(key, table, bundle, comment)
+#define LOCALIZED_STRING(key) NSLocalizedStringFromTableInBundle(key, @"Localizable", [NSBundle mainBundle], nil) //默认mainBundle
+#define LOCALIZED_STRING_IN_BUNDLE(key, bundle) NSLocalizedStringFromTableInBundle(key, @"Localizable", bundle, nil) //bundle自定义
+#define LOCALIZED_STRING_FROM_TABLE_IN_BUNDLE(key, table, bundle, comment) NSLocalizedStringFromTableInBundle(key, table, bundle, comment)
 
 //加载图片
-#define kImage(named) [UIImage imageNamed:named inBundle:[NSBundle mainBundle] compatibleWithTraitCollection:nil]
-#define kImageInBundle(named, bundle) [UIImage imageNamed:named inBundle:bundle compatibleWithTraitCollection:nil]
+#define IMAGE(named) [UIImage imageNamed:named inBundle:[NSBundle mainBundle] compatibleWithTraitCollection:nil]
+#define IMAGE_IN_BUNDLE(named, bundle) [UIImage imageNamed:named inBundle:bundle compatibleWithTraitCollection:nil]
 
 // Block
 #define BLOCK_EXEC(block, ...) if (block) { block(__VA_ARGS__); };

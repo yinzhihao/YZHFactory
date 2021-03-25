@@ -55,4 +55,16 @@
     self.y = centerY - self.width / 2;
 }
 
+//截图
+- (UIImage *)captureImage {
+    CGRect rect = self.bounds;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    UIGraphicsBeginImageContextWithOptions(rect.size, YES, scale);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:ctx];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end

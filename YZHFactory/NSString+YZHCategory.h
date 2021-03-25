@@ -48,6 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 //限制只能输入数字
 - (BOOL) isOnlyNumber;
 
+#pragma mark - 转为二维码图像
+- (UIImage *)toQRImageWithSize:(CGFloat)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
