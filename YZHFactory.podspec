@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YZHFactory"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "iOS Factory"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  TODO: add some category functions and rewrite macros
+  TODO: fix font macros.
                    DESC
 
   spec.homepage     = "https://github.com/yinzhihao/YZHFactory"

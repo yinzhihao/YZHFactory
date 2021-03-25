@@ -81,10 +81,10 @@ green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 \
 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
 //字体
-#define FONT_SYSTEM(size) [UIFont systemFontOfSize:size]
-#define FONT_HELVETICA(size) [UIFont fontWithName:@"Helvetica" size:size]
-#define FONT_HELVETICA_BOLD(size) [UIFont fontWithName:@"Helvetica-Bold" size:size]
-#define FONT_PINGFANG_SC(size) [UIFont fontWithName:@"PingFangSC" size:size]
+#define FONT_SYSTEM(s) [UIFont systemFontOfSize:s]
+#define FONT_HELVETICA(s) [UIFont fontWithName:@"Helvetica" size:s]
+#define FONT_HELVETICA_BOLD(s) [UIFont fontWithName:@"Helvetica-Bold" size:s]
+#define FONT_PINGFANG_SC(s) [UIFont fontWithName:@"PingFangSC" size:s]
 
 //由角度转换弧度
 #define DEGREES_TO_RADIAN(x)      (M_PI * (x) / 180.0)
