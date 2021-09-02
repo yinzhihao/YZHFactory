@@ -10,7 +10,7 @@
 
 @implementation UIViewController (YZHCaregory)
 
-+ (UIViewController *)getCurrentVC
++ (UIViewController *)yzh_getCurrentVC
 {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     UIViewController *rootVC = keyWindow.rootViewController;

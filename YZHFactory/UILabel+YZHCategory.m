@@ -7,22 +7,25 @@
 //
 
 #import "UILabel+YZHCategory.h"
-#import "UIColor+YZHCategory.h"
 
 @implementation UILabel (YZHCategory)
 
-+ (instancetype)labelWithText:(NSString *)text fontName:(nullable NSString *)fontName fontSize:(CGFloat)fontSize colorString:(NSString *)colorString {
++ (instancetype)yzh_labelWithText:(NSString *)text
+                    textAlignment:(NSTextAlignment)textAlignment
+                    numberOfLines:(NSInteger)numberOfLines
+                             font:(nullable UIFont *)font
+                            color:(nullable UIColor *)color
+{
     UILabel *label = [[self alloc] init];
-    
     label.text = text;
-    if(fontName){
-        label.font = [UIFont fontWithName:fontName size:fontSize];
-    }else{
-        label.font = [UIFont systemFontOfSize:fontSize];
+    label.textAlignment = textAlignment;
+    label.numberOfLines = numberOfLines;
+    if(font){
+        label.font = font;
     }
-    label.textColor = [UIColor colorWithHexString:colorString];
-    label.numberOfLines = 0;
-    
+    if (color) {
+        label.textColor = color;
+    }
     return label;
 }
 

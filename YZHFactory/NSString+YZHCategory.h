@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,41 +16,56 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 正则
 
 //通用正则方法，例如 [smsCode predicateWithRegex:@"^[0-9]{6}"];
-- (BOOL) predicateWithRegex:(NSString *)regex;
+- (BOOL) yzh_predicateWithRegex:(NSString *)regex;
 
 //有效的电话号码
-- (BOOL) isValidMobileNumber;
+- (BOOL) yzh_isValidMobileNumber;
 
 //有效的真实姓名
-- (BOOL) isValidRealName;
+- (BOOL) yzh_isValidRealName;
 
 //是否只有中文
-- (BOOL) isOnlyChinese;
+- (BOOL) yzh_isOnlyChinese;
 
 //有效的验证码,6位(根据自家的验证码位数进行修改)
-- (BOOL) isValidVerifyCode;
+- (BOOL) yzh_isValidVerifyCode;
 
 //有效的银行卡号
-- (BOOL) isValidBankCardNumber;
+- (BOOL) yzh_isValidBankCardNumber;
 
 //有效的邮箱
-- (BOOL) isValidEmail;
+- (BOOL) yzh_isValidEmail;
 
 //有效的字母数字密码
-- (BOOL) isValidAlphaNumberPassword;
+- (BOOL) yzh_isValidAlphaNumberPassword;
 
 //检测有效身份证
 //15位
-- (BOOL) isValidIdentifyFifteen;
+- (BOOL) yzh_isValidIdentifyFifteen;
 
 //18位
-- (BOOL) isValidIdentifyEighteen;
+- (BOOL) yzh_isValidIdentifyEighteen;
 
 //限制只能输入数字
-- (BOOL) isOnlyNumber;
+- (BOOL) yzh_isOnlyNumber;
 
 #pragma mark - 转为二维码图像
-- (UIImage *)toQRImageWithSize:(CGFloat)size;
+- (UIImage *) yzh_toQRImageWithSize:(CGFloat)size;
+
+#pragma mark - 字符串转NSDate
+
+//formateString: 时间格式，例如YYYY-MM-DD HH:mm:ss
+- (NSDate *)yzh_toDate:(NSString *)formateString;
+
+/*
+ * MD5
+ */
+- (NSString *)yzh_md5_32bit;
+
+/*
+ * 获取文本实际大小
+ */
+- (CGSize)yzh_sizeWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpacing wordSpacing:(CGFloat)wordSpacing;
 
 @end
 

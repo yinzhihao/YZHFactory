@@ -16,12 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
  快速创建Label
 
  @param text 标题
- @param fontName 标题样式
- @param fontSize 标题大小
- @param colorString 字体颜色
+ @param textAlignment 对齐
+ @param numberOfLines 行数
+ @param font 字体大小
+ @param color 字体颜色
  @return Label
  */
-+ (instancetype)labelWithText:(NSString *)text fontName:(nullable NSString *)fontName fontSize:(CGFloat)fontSize colorString:(NSString *)colorString;
++ (instancetype)yzh_labelWithText:(NSString *)text
+                    textAlignment:(NSTextAlignment)textAlignment
+                    numberOfLines:(NSInteger)numberOfLines
+                             font:(nullable UIFont *)font
+                            color:(nullable UIColor *)color;
 
 @end
 

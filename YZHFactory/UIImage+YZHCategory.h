@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /* color转成image
  *
  */
-+ (instancetype)imageWithColor:(UIColor *)color size:(CGSize)size;
++ (instancetype)yzh_imageWithColor:(UIColor *)color size:(CGSize)size;
 
 @end
 

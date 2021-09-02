@@ -36,7 +36,7 @@
 }
 
 #pragma mark - 文件是否存在
-- (BOOL)fileExistsAtPath:(NSString *)path {
+- (BOOL)yzh_fileExistsAtPath:(NSString *)path {
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"文件不存在 path为空 path=%@",path);
         return NO;
@@ -45,13 +45,13 @@
 }
 
 #pragma mark - 创建文件夹
-- (BOOL)creatDir:(NSString *)path{
+- (BOOL)yzh_creatDir:(NSString *)path{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"创建文件夹失败 path为空 path=%@",path)
         return NO;
     }
     BOOL isSuccess = YES;
-    BOOL isExist = [self fileExistsAtPath:path];
+    BOOL isExist = [self yzh_fileExistsAtPath:path];
     if (isExist==NO) {
         NSError *error;
         if (![FILE_MANAGER createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error]) {
@@ -63,12 +63,12 @@
 }
 
 #pragma mark - 创建文件
-- (BOOL)creatFile:(NSString*)path{
+- (BOOL)yzh_creatFile:(NSString*)path{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"创建文件失败 path为空 path=%@",path)
         return NO;
     }
-    if ([self fileExistsAtPath:path]) {
+    if ([self yzh_fileExistsAtPath:path]) {
         return YES;
     }
     NSError *error;
@@ -85,7 +85,7 @@
 }
 
 #pragma mark - 删除文件
-- (BOOL)removeFile:(NSString*)path{
+- (BOOL)yzh_removeFile:(NSString*)path{
     BOOL isSuccess = NO;
     NSError *error;
     isSuccess = [FILE_MANAGER removeItemAtPath:path error:&error];
@@ -98,12 +98,12 @@
 }
 
 #pragma mark - 写入文件
-- (BOOL)writeToFile:(NSString*)path contents:(NSData *)data{
+- (BOOL)yzh_writeToFile:(NSString*)path contents:(NSData *)data{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"写入文件失败 path为空 path=%@",path)
         return NO;
     }
-    BOOL result = [self creatFile:path];
+    BOOL result = [self yzh_creatFile:path];
     if (result) {
         if ([data writeToFile:path atomically:YES]) {
             YZHLog(@"write Success");
@@ -118,12 +118,12 @@
 }
 
 #pragma mark - 追加写入文件
-- (BOOL)appendData:(NSData*)data withPath:(NSString *)path{
+- (BOOL)yzh_appendData:(NSData*)data withPath:(NSString *)path{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"追加写入文件失败 path为空 path=%@",path)
         return NO;
     }
-    BOOL result = [self creatFile:path];
+    BOOL result = [self yzh_creatFile:path];
     if (result) {
         NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:path];
         [handle seekToEndOfFile];
@@ -140,12 +140,12 @@
 #pragma mark - 读取文件
 /// 从文件中读取数据
 /// @param path 文件完整路径
-- (NSData *)readFileData:(NSString *)path{
+- (NSData *)yzh_readFileData:(NSString *)path{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"读取文件失败，path为空 path=%@", path)
         return nil;
     }
-    if (![self fileExistsAtPath:path]) {
+    if (![self yzh_fileExistsAtPath:path]) {
         YZHLog(@"文件不存在 path=%@",path)
         return nil;
     }
@@ -154,12 +154,12 @@
 }
 
 #pragma mark - 获取文件夹下的所有文件列表
-- (NSArray *)getFileList:(NSString*)path{
+- (NSArray *)yzh_getFileList:(NSString*)path{
     if (STRING_IS_EMPTY(path)) {
         YZHLog(@"获取文件夹下的所有文件列表失败 path为空 path=%@",path)
         return nil;
     }
-    if (![self fileExistsAtPath:path]) {
+    if (![self yzh_fileExistsAtPath:path]) {
         YZHLog(@"文件不存在 path=%@",path)
         return nil;
     }

@@ -13,7 +13,7 @@
 #pragma mark - 数据转化
 
 #pragma mark - 1. JSON字符串转化为字典
-+ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString
++ (NSDictionary *)yzh_dictionaryWithJsonString:(NSString *)jsonString
 {
     if (jsonString == nil) {
         return nil;
@@ -34,7 +34,7 @@
 
 #pragma mark - 2. 字典转Json字符串
 
-+ (NSString *)convertToJsonData:(NSDictionary *)dict
++ (NSString *)yzh_convertToJsonData:(NSDictionary *)dict
 
 {
 
@@ -76,7 +76,7 @@
 
 #pragma mark - 1. NSData转16进制字符串
 
-+ (NSString *)hexData2hexString:(NSData *)data
++ (NSString *)yzh_hexData2hexString:(NSData *)data
 {
     if (!data) {
         return nil;
@@ -111,7 +111,7 @@
 
 #pragma mark - 2. 16进制字符串转NSData
 
-+ (NSData *)hexStr2Data:(NSString *)str {
++ (NSData *)yzh_hexStr2Data:(NSString *)str {
     if (!str || [str length] == 0) {
         return nil;
     }

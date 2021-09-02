@@ -16,17 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
  快速创建按钮
 
  @param title 标题
- @param fontName 标题样式
- @param fontSize 标题大小
+ @param font 字体
  @param normalColor 默认颜色
- @param selectedColor 选中颜色
+ @param backgroundColor 背景颜色
+ @param image 图片
  @return 按钮
  */
-+ (instancetype)buttonWithTitleString:(NSString *)title
-                             fontName:(nullable NSString *)fontName
-                             fontSize:(CGFloat)fontSize
-                          normalColor:(NSString *)normalColor
-                        selectedColor:(NSString *)selectedColor;
++ (instancetype)yzh_buttonWithTitle:(NSString *)title
+                               font:(nullable UIFont *)font
+                        normalColor:(nullable UIColor *)normalColor
+                    backgroundColor:(nullable UIColor *)backgroundColor
+                              image:(nullable UIImage *)image;
 
 @end
 

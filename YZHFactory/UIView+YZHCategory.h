@@ -10,14 +10,15 @@
 
 @interface UIView (YZHCategory)
 
-@property (nonatomic, assign) CGFloat x;
-@property (nonatomic, assign) CGFloat y;
-@property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGFloat centerX;
-@property (nonatomic, assign) CGFloat centerY;
+@property (nonatomic, assign) CGFloat yzh_x;
+@property (nonatomic, assign) CGFloat yzh_y;
+@property (nonatomic, assign) CGFloat yzh_width;
+@property (nonatomic, assign) CGFloat yzh_height;
+@property (nonatomic, assign) CGFloat yzh_centerX;
+@property (nonatomic, assign) CGFloat yzh_centerY;
 
 #pragma mark - 截图
-- (UIImage *)captureImage;
+
+- (UIImage *)yzh_captureImage;
 
 @end

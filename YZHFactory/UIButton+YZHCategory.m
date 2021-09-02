@@ -7,27 +7,30 @@
 //
 
 #import "UIButton+YZHCategory.h"
-#import "UIColor+YZHCategory.h"
 
 @implementation UIButton (YZHCategory)
 
-+ (instancetype)buttonWithTitleString:(NSString *)title
-                             fontName:(nullable NSString *)fontName
-                             fontSize:(CGFloat)fontSize
-                          normalColor:(NSString *)normalColor
-                        selectedColor:(NSString *)selectedColor {
++ (instancetype)yzh_buttonWithTitle:(NSString *)title
+                               font:(nullable UIFont *)font
+                        normalColor:(nullable UIColor *)normalColor
+                    backgroundColor:(nullable UIColor *)backgroundColor
+                              image:(nullable UIImage *)image
+{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithHexString:normalColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithHexString:selectedColor] forState:UIControlStateSelected];
-    
-    if (fontName) {
-        [button.titleLabel setFont:[UIFont fontWithName:fontName size:fontSize]];
-    } else {
-        [button.titleLabel setFont:[UIFont systemFontOfSize:fontSize]];
+    if (font) {
+        [button.titleLabel setFont:font];
     }
-    [button sizeToFit];
+    if (normalColor) {
+        [button setTitleColor:normalColor forState:UIControlStateNormal];
+    }
+    if (backgroundColor) {
+        button.backgroundColor = backgroundColor;
+    }
+    if (image) {
+        [button setImage:image forState:UIControlStateNormal];
+    }
     
     return button;
 }

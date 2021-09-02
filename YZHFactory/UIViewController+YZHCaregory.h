@@ -10,6 +10,6 @@
 
 @interface UIViewController (YZHCaregory)
 
-+ (UIViewController *)getCurrentVC;
++ (UIViewController *)yzh_getCurrentVC;
 
 @end

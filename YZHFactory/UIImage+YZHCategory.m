@@ -10,7 +10,7 @@
 
 @implementation UIImage (YZHCategory)
 
-+ (instancetype)imageWithColor:(UIColor *)color size:(CGSize)size
++ (instancetype)yzh_imageWithColor:(UIColor *)color size:(CGSize)size
 {
     UIGraphicsBeginImageContext(size);
     CGContextRef ctx = UIGraphicsGetCurrentContext();

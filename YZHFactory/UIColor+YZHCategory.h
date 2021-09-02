@@ -18,14 +18,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param hex 16 进制无符号32位整数
  @return 颜色
  */
-+ (instancetype)colorWithHex:(uint32_t)hex;
++ (instancetype)yzh_colorWithHex:(uint32_t)hex;
 
 /**
  产生随机色
 
  @return 随机色
  */
-+ (instancetype)arc4randomColor;
++ (instancetype)yzh_arc4randomColor;
 
 
 /**
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param alpha 透明度
  @return Color
  */
-+ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
++ (UIColor *)yzh_colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
 /**
  支持三种格式颜色字符串@"123456"  @"0x123456"  @"#123456"输入
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param color 十六进制颜色字符串
  @return Color
  */
-+ (UIColor *)colorWithHexString:(NSString *)color;
++ (UIColor *)yzh_colorWithHexString:(NSString *)color;
 
 @end
 

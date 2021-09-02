@@ -7,70 +7,71 @@
 //
 
 #import "NSString+YZHCategory.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (YZHCategory)
 
 #pragma mark - 正则
 
-- (BOOL) predicateWithRegex:(NSString *)regex {
+- (BOOL) yzh_predicateWithRegex:(NSString *)regex {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL) isValidMobileNumber {
+- (BOOL) yzh_isValidMobileNumber {
     NSString *regex = @"^1(3|4|5|7|8)\\d{9}$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidVerifyCode {
+- (BOOL) yzh_isValidVerifyCode {
     NSString *regex = @"^[0-9]{6}";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidRealName {
+- (BOOL) yzh_isValidRealName {
     NSString *regex = @"^[\u4e00-\u9fa5]{2,8}$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isOnlyChinese {
+- (BOOL) yzh_isOnlyChinese {
     NSString *regex = @"^[\u4e00-\u9fa5]{0,}$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidBankCardNumber {
+- (BOOL) yzh_isValidBankCardNumber {
     NSString *regex = @"^(\\d{16}|\\d{19})$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidEmail{
+- (BOOL) yzh_isValidEmail{
     NSString *regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) validateNickName{
+- (BOOL) yzh_validateNickName{
     NSString *regex = @"^[A-Za-z0-9\u4e00-\u9fa5]{1,24}+$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidAlphaNumberPassword{
+- (BOOL) yzh_isValidAlphaNumberPassword{
     NSString *regex = @"^(?!\\d+$|[a-zA-Z]+$)\\w{6,12}$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidIdentifyFifteen{
+- (BOOL) yzh_isValidIdentifyFifteen{
     NSString *regex = @"^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isValidIdentifyEighteen {
+- (BOOL) yzh_isValidIdentifyEighteen {
     NSString *regex = @"^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|X)$";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
 }
 
-- (BOOL) isOnlyNumber {
+- (BOOL) yzh_isOnlyNumber {
     //方法1：正则
     NSString *regex = @"[0-9]*";
-    return [self predicateWithRegex:regex];
+    return [self yzh_predicateWithRegex:regex];
     
     //方法2：NSCharacterSet
     /*
@@ -108,7 +109,7 @@
 }
 
 //转为二维码图像
-- (UIImage *)toQRImageWithSize:(CGFloat)size {
+- (UIImage *)yzh_toQRImageWithSize:(CGFloat)size {
     NSData *stringData = [self dataUsingEncoding:NSUTF8StringEncoding];
     CIFilter *qrFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     [qrFilter setValue:stringData forKey:@"inputMessage"];
@@ -132,6 +133,41 @@
     CGContextRelease(bitmapRef);
     CGImageRelease(bitmapImage);
     return [UIImage imageWithCGImage:scaledImage];
+}
+
+- (NSDate *)yzh_toDate:(NSString *)formateString
+{
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:formateString];
+    [dateFormat setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    NSDate *date =[dateFormat dateFromString:self];
+    return date;
+}
+
+- (NSString *)yzh_md5_32bit {
+    const char *cStr = [self UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, (CC_LONG)self.length, digest );
+    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [result appendFormat:@"%02x", digest[i]];
+    return result;
+}
+
+- (CGSize)yzh_sizeWithFont:(UIFont *)font lineSpacing:(CGFloat)lineSpacing wordSpacing:(CGFloat)wordSpacing
+{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:lineSpacing];
+    NSDictionary *attrs = @{
+        NSFontAttributeName: font,
+        NSParagraphStyleAttributeName: paragraphStyle,
+        NSKernAttributeName: @(wordSpacing)
+    };
+    CGSize size = [self boundingRectWithSize:CGSizeZero
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attrs
+                                     context:nil].size;
+    return size;
 }
 
 @end
