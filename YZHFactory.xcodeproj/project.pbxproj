@@ -16,6 +16,8 @@
 		30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30001A9624EF63AB0022BD70 /* YZHFileManager.m */; };
 		3053C9BA262FCC3E00A6A88C /* NSDate+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3053C9B8262FCC3E00A6A88C /* NSDate+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3053C9BB262FCC3E00A6A88C /* NSDate+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3053C9B9262FCC3E00A6A88C /* NSDate+YZHCategory.m */; };
+		305AA89A26E1C6A200FBC73D /* YZHFactory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */; };
+		305AA89B26E1C6A200FBC73D /* YZHFactory.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		306A57FA25DFB5C700D0A876 /* UIImage+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 306A57F825DFB5C700D0A876 /* UIImage+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306A57FB25DFB5C700D0A876 /* UIImage+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 306A57F925DFB5C700D0A876 /* UIImage+YZHCategory.m */; };
 		30839C4A25BEBEDE0025CA14 /* UIView+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30839C4825BEBEDE0025CA14 /* UIView+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +45,30 @@
 		30CBB1CF26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CBB1CD26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30CBB1D026D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBB1CE26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		305AA89C26E1C6A200FBC73D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 308B5E7724EBCEB7004E9CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 308B5E7F24EBCEB7004E9CC4;
+			remoteInfo = YZHFactory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		305AA89E26E1C6A200FBC73D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				305AA89B26E1C6A200FBC73D /* YZHFactory.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YZHCaregory.h"; sourceTree = "<group>"; };
@@ -96,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305AA89A26E1C6A200FBC73D /* YZHFactory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +206,13 @@
 			name = "UIKit+Category";
 			sourceTree = "<group>";
 		};
+		305AA89426E1C5F000FBC73D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		30839CCE25C257920025CA14 /* YZHFactoryDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +237,7 @@
 				308B5E8224EBCEB7004E9CC4 /* YZHFactory */,
 				30839CCE25C257920025CA14 /* YZHFactoryDemo */,
 				308B5E8124EBCEB7004E9CC4 /* Products */,
+				305AA89426E1C5F000FBC73D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,10 +325,12 @@
 				30839CC925C257920025CA14 /* Sources */,
 				30839CCA25C257920025CA14 /* Frameworks */,
 				30839CCB25C257920025CA14 /* Resources */,
+				305AA89E26E1C6A200FBC73D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				305AA89D26E1C6A200FBC73D /* PBXTargetDependency */,
 			);
 			name = YZHFactoryDemo;
 			productName = YZHFactoryDemo;
@@ -409,6 +446,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		305AA89D26E1C6A200FBC73D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 308B5E7F24EBCEB7004E9CC4 /* YZHFactory */;
+			targetProxy = 305AA89C26E1C6A200FBC73D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		30839CD825C257920025CA14 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -437,7 +482,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBB6RBH9JT;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "${SRCROOT}/YZHFactoryDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YZHFactoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -460,7 +505,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBB6RBH9JT;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "${SRCROOT}/YZHFactoryDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YZHFactoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

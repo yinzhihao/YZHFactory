@@ -76,21 +76,21 @@
             break;
         case 1:
         {
-            NSString *string = [[NSDate date] yzh_toFormatString:@"YYYY-MM-DD HH:mm:ss"];
+            NSString *string = [[NSDate date] yzh_toFormatString:@"YYYY-MM-dd HH:mm:ss"];
             YZHLog(@"string = %@", string);
         }
             break;
         case 2:
         {
-            NSDate *date = [@"2021-09-02 15:12:30" yzh_toDate:@"YYYY-MM-DD HH:mm:ss"];
+            NSDate *date = [@"2021-09-02 15:12:30" yzh_toDate:@"YYYY-MM-dd HH:mm:ss"];
             YZHLog(@"date = %@", date);
         }
             break;
         case 3:
             [UIAlertController yzh_alertControllerWithVC:self title:@"提示" message:@"消息" preferredStyle:UIAlertControllerStyleAlert cancelTitle:@"取消" cancelBlock:^(UIAlertAction * _Nonnull action) {
-                YZHLog(@"cancel");
-            } okTitle:@"OK" okBlock:^(UIAlertAction * _Nonnull action) {
-                YZHLog(@"OK");
+                YZHLog(@"取消");
+            } okTitle:@"确定" okBlock:^(UIAlertAction * _Nonnull action) {
+                YZHLog(@"确定");
             }];
             break;
         case 4:
@@ -113,19 +113,19 @@
         case 10:
         {
             UIViewController *curVC = [UIViewController yzh_getCurrentVC];
-            YZHLog(@"curVC = %@", curVC);
+            YZHLog(@"curVC = %@", [curVC class]);
         }
             break;
         case 11:
         {
-//            BOOL isexist = [YZHFileManager.shared yzh_fileExistsAtPath:@"123"];
-//            YZHLog(@"isexist = %@", isexist ? @"存在":@"不存在");
+            BOOL isexist = [YZHFileManager.shared yzh_fileExistsAtPath:@"123"];
+            YZHLog(@"isexist = %@", isexist ? @"存在":@"不存在");
         }
             break;
         case 12:
         {
-//            NSString *json = [YZHConvertUtils yzh_convertToJsonData:@{@"name":@"张三",@"age":@20}];
-//            YZHLog(@"json = %@", json);
+            NSString *json = [YZHConvertUtils yzh_convertToJsonData:@{@"name":@"张三",@"age":@20}];
+            YZHLog(@"json = %@", json);
         }
             break;
             
