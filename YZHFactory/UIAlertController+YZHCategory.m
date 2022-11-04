@@ -11,13 +11,13 @@
 @implementation UIAlertController (YZHCategory)
 
 + (void)yzh_alertControllerWithVC:(UIViewController *)vc
-                                           title:(NSString *)title
-                                         message:(NSString *)message
-                                  preferredStyle:(UIAlertControllerStyle)style
-                                     cancelTitle:(NSString *)cancelTitle
-                                     cancelBlock:(void(^)(UIAlertAction *action))cancelBlock
-                                         okTitle:(NSString *)okTitle
-                                         okBlock:(void(^)(UIAlertAction *action))okBlock
+                            title:(NSString *)title
+                          message:(NSString *)message
+                   preferredStyle:(UIAlertControllerStyle)style
+                      cancelTitle:(NSString *)cancelTitle
+                      cancelBlock:(void(^)(UIAlertAction *action))cancelBlock
+                          okTitle:(NSString *)okTitle
+                          okBlock:(void(^)(UIAlertAction *action))okBlock
 {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     

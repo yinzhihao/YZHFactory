@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIAlertController (YZHCategory)
 
 + (void)yzh_alertControllerWithVC:(UIViewController *)vc
-                                           title:(NSString *)title
-                                         message:(NSString *)message
-                                  preferredStyle:(UIAlertControllerStyle)style
-                                     cancelTitle:(NSString *)cancelTitle
-                                     cancelBlock:(void(^)(UIAlertAction *action))cancelBlock
-                                         okTitle:(NSString *)okTitle
-                                         okBlock:(void(^)(UIAlertAction *action))okBlock;
+                            title:(NSString *)title
+                          message:(NSString *)message
+                   preferredStyle:(UIAlertControllerStyle)style
+                      cancelTitle:(nullable NSString *)cancelTitle
+                      cancelBlock:(nullable void(^)(UIAlertAction *action))cancelBlock
+                          okTitle:(nullable NSString *)okTitle
+                          okBlock:(nullable void(^)(UIAlertAction *action))okBlock;
 
 @end
 

@@ -40,6 +40,8 @@
 		308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		309D750A26DF91DC00F43A28 /* UINavigationController+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 309D750826DF91DC00F43A28 /* UINavigationController+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		309D750B26DF91DC00F43A28 /* UINavigationController+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 309D750926DF91DC00F43A28 /* UINavigationController+YZHCategory.m */; };
+		30B63D45291505E3001B31D2 /* CALayer+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */; };
+		30B63D46291505E3001B31D2 /* CALayer+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B63D44291505E3001B31D2 /* CALayer+YZHCategory.m */; };
 		30CBA6F026E06D5700DDC92E /* YZHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA6EF26E06D5700DDC92E /* YZHObject.m */; };
 		30CBA6F526E0728D00DDC92E /* YZHTESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA6F426E0728D00DDC92E /* YZHTESTViewController.m */; };
 		30CBB1CF26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CBB1CD26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +110,8 @@
 		308B5E8424EBCEB7004E9CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		309D750826DF91DC00F43A28 /* UINavigationController+YZHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YZHCategory.h"; sourceTree = "<group>"; };
 		309D750926DF91DC00F43A28 /* UINavigationController+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YZHCategory.m"; sourceTree = "<group>"; };
+		30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+YZHCategory.h"; sourceTree = "<group>"; };
+		30B63D44291505E3001B31D2 /* CALayer+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YZHCategory.m"; sourceTree = "<group>"; };
 		30CBA6EE26E06D5700DDC92E /* YZHObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHObject.h; sourceTree = "<group>"; };
 		30CBA6EF26E06D5700DDC92E /* YZHObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHObject.m; sourceTree = "<group>"; };
 		30CBA6F326E0728D00DDC92E /* YZHTESTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHTESTViewController.h; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				30839C4925BEBEDE0025CA14 /* UIView+YZHCategory.m */,
 				30001A8B24EF63920022BD70 /* UIViewController+YZHCaregory.h */,
 				30001A8C24EF63920022BD70 /* UIViewController+YZHCaregory.m */,
+				30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */,
+				30B63D44291505E3001B31D2 /* CALayer+YZHCategory.m */,
 			);
 			name = "UIKit+Category";
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B63D45291505E3001B31D2 /* CALayer+YZHCategory.h in Headers */,
 				309D750A26DF91DC00F43A28 /* UINavigationController+YZHCategory.h in Headers */,
 				306A57FA25DFB5C700D0A876 /* UIImage+YZHCategory.h in Headers */,
 				30CBB1CF26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h in Headers */,
@@ -438,6 +445,7 @@
 				30001A8E24EF63920022BD70 /* UIViewController+YZHCaregory.m in Sources */,
 				309D750B26DF91DC00F43A28 /* UINavigationController+YZHCategory.m in Sources */,
 				30839C7A25C01BEF0025CA14 /* NSString+YZHCategory.m in Sources */,
+				30B63D46291505E3001B31D2 /* CALayer+YZHCategory.m in Sources */,
 				306A57FB25DFB5C700D0A876 /* UIImage+YZHCategory.m in Sources */,
 				30001A9124EF639A0022BD70 /* YZHConvertUtils.m in Sources */,
 				30839C5C25BECDC70025CA14 /* UIButton+YZHCategory.m in Sources */,
