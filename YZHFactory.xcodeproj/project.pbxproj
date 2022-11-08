@@ -37,10 +37,12 @@
 		30839CDC25C257960025CA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30839CDB25C257960025CA14 /* Assets.xcassets */; };
 		30839CDF25C257960025CA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30839CDD25C257960025CA14 /* LaunchScreen.storyboard */; };
 		30839CE225C257960025CA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30839CE125C257960025CA14 /* main.m */; };
+		30843FF42917D089009C816D /* YZHDefineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30843FF32917D089009C816D /* YZHDefineViewController.m */; };
 		308B5E8524EBCEB7004E9CC4 /* YZHFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		309D750A26DF91DC00F43A28 /* UINavigationController+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 309D750826DF91DC00F43A28 /* UINavigationController+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		309D750B26DF91DC00F43A28 /* UINavigationController+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 309D750926DF91DC00F43A28 /* UINavigationController+YZHCategory.m */; };
-		30B63D45291505E3001B31D2 /* CALayer+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */; };
+		30A6152A2918F15000471D14 /* YZHUIColorCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A615292918F15000471D14 /* YZHUIColorCategoryViewController.m */; };
+		30B63D45291505E3001B31D2 /* CALayer+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30B63D46291505E3001B31D2 /* CALayer+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B63D44291505E3001B31D2 /* CALayer+YZHCategory.m */; };
 		30CBA6F026E06D5700DDC92E /* YZHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA6EF26E06D5700DDC92E /* YZHObject.m */; };
 		30CBA6F526E0728D00DDC92E /* YZHTESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA6F426E0728D00DDC92E /* YZHTESTViewController.m */; };
@@ -105,11 +107,15 @@
 		30839CDE25C257960025CA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30839CE025C257960025CA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30839CE125C257960025CA14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30843FF22917D089009C816D /* YZHDefineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHDefineViewController.h; sourceTree = "<group>"; };
+		30843FF32917D089009C816D /* YZHDefineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHDefineViewController.m; sourceTree = "<group>"; };
 		308B5E8024EBCEB7004E9CC4 /* YZHFactory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZHFactory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		308B5E8324EBCEB7004E9CC4 /* YZHFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHFactory.h; sourceTree = "<group>"; };
 		308B5E8424EBCEB7004E9CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		309D750826DF91DC00F43A28 /* UINavigationController+YZHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YZHCategory.h"; sourceTree = "<group>"; };
 		309D750926DF91DC00F43A28 /* UINavigationController+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YZHCategory.m"; sourceTree = "<group>"; };
+		30A615282918F15000471D14 /* YZHUIColorCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHUIColorCategoryViewController.h; sourceTree = "<group>"; };
+		30A615292918F15000471D14 /* YZHUIColorCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZHUIColorCategoryViewController.m; sourceTree = "<group>"; };
 		30B63D43291505E3001B31D2 /* CALayer+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+YZHCategory.h"; sourceTree = "<group>"; };
 		30B63D44291505E3001B31D2 /* CALayer+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YZHCategory.m"; sourceTree = "<group>"; };
 		30CBA6EE26E06D5700DDC92E /* YZHObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHObject.h; sourceTree = "<group>"; };
@@ -269,9 +275,19 @@
 			path = YZHFactory;
 			sourceTree = "<group>";
 		};
+		30A615272918F12C00471D14 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				30A615282918F15000471D14 /* YZHUIColorCategoryViewController.h */,
+				30A615292918F15000471D14 /* YZHUIColorCategoryViewController.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		30CBA6EC26E06B7500DDC92E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				30A615272918F12C00471D14 /* UIColor */,
 				30CBA6F226E0725700DDC92E /* ViewController */,
 				30CBA6ED26E06D3400DDC92E /* YZHDefine */,
 			);
@@ -281,6 +297,8 @@
 		30CBA6ED26E06D3400DDC92E /* YZHDefine */ = {
 			isa = PBXGroup;
 			children = (
+				30843FF22917D089009C816D /* YZHDefineViewController.h */,
+				30843FF32917D089009C816D /* YZHDefineViewController.m */,
 				30CBA6EE26E06D5700DDC92E /* YZHObject.h */,
 				30CBA6EF26E06D5700DDC92E /* YZHObject.m */,
 			);
@@ -369,7 +387,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = YZH;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = yzh;
 				TargetAttributes = {
 					30839CCC25C257920025CA14 = {
@@ -427,8 +445,10 @@
 				30CBA6F026E06D5700DDC92E /* YZHObject.m in Sources */,
 				30839CD725C257920025CA14 /* ViewController.m in Sources */,
 				30839CD125C257920025CA14 /* AppDelegate.m in Sources */,
+				30843FF42917D089009C816D /* YZHDefineViewController.m in Sources */,
 				30CBA6F526E0728D00DDC92E /* YZHTESTViewController.m in Sources */,
 				30839CE225C257960025CA14 /* main.m in Sources */,
+				30A6152A2918F15000471D14 /* YZHUIColorCategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YZHObject : NSObject
 
-SINGLETON_FOR_HEADER()
+SINGLETON_FOR_HEADER
 
 - (void)ttt;
 

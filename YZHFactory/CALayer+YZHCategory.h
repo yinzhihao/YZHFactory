@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, TransitionAnimType){
     
     TransitionAnimTypePageUnCurl,
     
-    TransitionAnimTypeRamdom,
+    TransitionAnimTypeRandom,
 };
 // 方向
 typedef NS_ENUM(NSInteger, TransitionSubType){
@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, TransitionSubType){
     
     TransitionSubtypesFromRight,
     
-    TransitionSubtypesFromRamdom,
+    TransitionSubtypesFromRandom,
 };
 
 
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, TransitionCurve) {
     
     TransitionCurveLinear,
     
-    TransitionCurveRamdom,
+    TransitionCurveRandom,
 };
 
 

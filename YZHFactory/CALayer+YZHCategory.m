@@ -60,8 +60,9 @@
     
     //曲线数组
     NSArray *funcNames=@[kCAMediaTimingFunctionDefault,kCAMediaTimingFunctionEaseIn,kCAMediaTimingFunctionEaseInEaseOut,kCAMediaTimingFunctionEaseOut,kCAMediaTimingFunctionLinear];
-    
-    return [self objFromArray:funcNames index:curve isRamdom:(TransitionCurveRamdom == curve)];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsign-conversion"
+    return [self objFromArray:funcNames index:curve isRandom:(TransitionCurveRandom == curve)];
 }
 
 
@@ -74,7 +75,7 @@
     //设置转场动画的方向
     NSArray *subtypes=@[kCATransitionFromTop,kCATransitionFromLeft,kCATransitionFromBottom,kCATransitionFromRight];
     
-    return [self objFromArray:subtypes index:subType isRamdom:(TransitionSubtypesFromRamdom == subType)];
+    return [self objFromArray:subtypes index:subType isRandom:(TransitionSubtypesFromRandom == subType)];
 }
 
 
@@ -88,16 +89,16 @@
     //设置转场动画的类型
     NSArray *animArray=@[@"rippleEffect",@"suckEffect",@"pageCurl",@"oglFlip",@"cube",@"reveal",@"pageUnCurl"];
     
-    return [self objFromArray:animArray index:type isRamdom:(TransitionAnimTypeRamdom == type)];
+    return [self objFromArray:animArray index:type isRandom:(TransitionAnimTypeRandom == type)];
 }
 
 
 
 // 统一从数据返回对象
--(id)objFromArray:(NSArray *)array index:(NSUInteger)index isRamdom:(BOOL)isRamdom{
+-(id)objFromArray:(NSArray *)array index:(NSUInteger)index isRandom:(BOOL)isRandom{
     NSUInteger count = array.count;
     
-    NSUInteger i = isRamdom?arc4random_uniform((u_int32_t)count) : index;
+    NSUInteger i = isRandom?arc4random_uniform((u_int32_t)count) : index;
     return array[i];
 }
 

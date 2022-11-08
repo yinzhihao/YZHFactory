@@ -30,4 +30,16 @@
 
 + (NSData *)yzh_hexStr2Data:(NSString *)str;
 
+/// 将字符串逐位转成16进制
++ (NSString *)yzh_hexStringFromString:(NSString *)string;
+
+//数字转NSData
++ (NSData *)yzh_ToHex:(NSInteger)tmpid;
+
+//16进制转10进制
++ (unsigned long long)yzh_convertHexToDecimal:(NSString *)hexStr;
+
+/// BCD解码（保留0）
++ (NSString *)yzh_bcdToDec:(NSData *)data;
+
 @end

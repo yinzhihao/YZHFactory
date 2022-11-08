@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"text vc";
-    self.view.backgroundColor = UIColor.yellowColor;
+    self.view.backgroundColor = UIColor.whiteColor;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(doBack)];
     

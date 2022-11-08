@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 字符串转NSDate
 
-//formateString: 时间格式，例如YYYY-MM-DD HH:mm:ss
+//formateString: 时间格式，例如YYYY-MM-dd HH:mm:ss
 - (NSDate *)yzh_toDate:(NSString *)formateString;
 
 /*

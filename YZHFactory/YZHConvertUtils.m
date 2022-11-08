@@ -86,7 +86,8 @@
     [data enumerateByteRangesUsingBlock:^(const void *bytes, NSRange byteRange, BOOL *stop) {
         
         unsigned char *dataBytes = (unsigned char*)bytes;
-        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsign-compare"
         for (NSInteger i = 0; i < byteRange.length; i++) {
             
             NSString *hexStr = [NSString stringWithFormat:@"%x", (dataBytes[i]) & 0xff];
@@ -104,8 +105,6 @@
         }
         
     }];
-    
-    NSLog(@"转化的16进制%@",string);
     return string;
 }
 
@@ -123,6 +122,8 @@
     } else {
         range = NSMakeRange(0, 1);
     }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wsign-conversion"
     for (NSInteger i = range.location; i < [str length]; i += 2) {
         unsigned int anInt;
         NSString *hexCharStr = [str substringWithRange:range];
@@ -135,9 +136,84 @@
         range.location += range.length;
         range.length = 2;
     }
-    
-    NSLog(@"hexdata: %@", hexData);
     return hexData;
+}
+
++ (NSString *)yzh_hexStringFromString:(NSString *)string{
+    NSData *myD = [string dataUsingEncoding:NSUTF8StringEncoding];
+    Byte *bytes = (Byte *)[myD bytes];
+    //下面是Byte 转换为16进制。
+    NSString *hexStr=@"";
+    for(int i=0;i<[myD length];i++)
+    {
+        NSString *newHexStr = [NSString stringWithFormat:@"%x",bytes[i]&0xff];///16进制数
+        if([newHexStr length]==1)
+            hexStr = [NSString stringWithFormat:@"%@0%@",hexStr,newHexStr];
+        else
+            hexStr = [NSString stringWithFormat:@"%@%@",hexStr,newHexStr];
+    }
+    return hexStr;
+}
+
++ (NSData *)yzh_ToHex:(NSInteger)tmpid
+{
+    //return [NSString stringWithFormat:@"%X", val]; //未验证
+    NSString *nLetterValue;
+    NSString *str = @"";
+    int ttmpig;
+    for (int i = 0; i < 9; i++) {
+        ttmpig = tmpid % 16;
+        tmpid = tmpid / 16;
+        switch (ttmpig)
+        {
+            case 10:
+                nLetterValue = @"A";break;
+            case 11:
+                nLetterValue = @"B";break;
+            case 12:
+                nLetterValue = @"C";break;
+            case 13:
+                nLetterValue = @"D";break;
+            case 14:
+                nLetterValue = @"E";break;
+            case 15:
+                nLetterValue = @"F";break;
+            default:
+                nLetterValue = [NSString stringWithFormat:@"%u",ttmpig];
+        }
+        str = [nLetterValue stringByAppendingString:str];
+        if (tmpid == 0) {
+            break;
+        }
+    }
+    
+    return [self yzh_hexStr2Data:str];
+}
+
+//16进制转10进制
++ (unsigned long long)yzh_convertHexToDecimal:(NSString *)hexStr {
+    unsigned long long decimal = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexStr];
+    [scanner scanHexLongLong:&decimal];
+    return decimal;
+}
+
+/// BCD解码（保留0）
++ (NSString *)yzh_bcdToDec:(NSData *)data {
+    char outStr[1024] = {0};
+    const unsigned char *bcd = data.bytes;
+    
+    int i;
+    int j = 0;
+    for(i = 0; i < data.length; i++) {
+        int a = (bcd[i]>>4)&0x0F;
+        int b = (bcd[i])&0x0F;
+        outStr[j++] = a+'0';
+        outStr[j++] = b+'0';
+    }
+    outStr[j] = '\0';
+    
+    return [NSString stringWithCString:outStr encoding:NSASCIIStringEncoding];
 }
 
 @end

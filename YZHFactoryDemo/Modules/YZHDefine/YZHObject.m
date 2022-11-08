@@ -10,7 +10,7 @@
 
 @implementation YZHObject
 
-SINGLETON_FOR_CLASS()
+SINGLETON_FOR_CLASS
 
 - (void)ttt
 {

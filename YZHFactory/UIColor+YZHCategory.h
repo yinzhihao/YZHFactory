@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIColor (YZHCategory)
 
 /**
- 使用 16 进制数字创建颜色，例如 0xFF0000 创建红色
+ 使用 16 进制数字创建颜色，格式 a/r/g/b，例如 0xFFFF0000 创建红色
 
  @param hex 16 进制无符号32位整数
  @return 颜色

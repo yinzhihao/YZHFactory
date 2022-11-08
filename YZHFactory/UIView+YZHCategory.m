@@ -10,49 +10,49 @@
 
 @implementation UIView (YZHCategory)
 
-- (CGFloat)yzh_x {
+- (CGFloat)x {
     return self.frame.origin.x;
 }
-- (void)setYzh_x:(CGFloat)yzh_x {
+- (void)setX:(CGFloat)x {
     CGRect frame = self.frame;
-    frame.origin.x = yzh_x;
+    frame.origin.x = x;
     self.frame = frame;
 }
-- (CGFloat)yzh_y {
+- (CGFloat)y {
     return self.frame.origin.y;
 }
-- (void)setYzh_y:(CGFloat)yzh_y {
+- (void)setY:(CGFloat)y {
     CGRect frame = self.frame;
-    frame.origin.y = yzh_y;
+    frame.origin.y = y;
     self.frame = frame;
 }
-- (CGFloat)yzh_width {
+- (CGFloat)width {
     return self.frame.size.width;
 }
-- (void)setYzh_width:(CGFloat)yzh_width {
+- (void)setWidth:(CGFloat)width {
     CGRect frame = self.frame;
-    frame.size.width = yzh_width;
+    frame.size.width = width;
     self.frame = frame;
 }
-- (CGFloat)yzh_height {
+- (CGFloat)height {
     return self.frame.size.height;
 }
-- (void)setYzh_height:(CGFloat)yzh_height {
+- (void)setHeight:(CGFloat)height {
     CGRect frame = self.frame;
-    frame.size.height = yzh_height;
+    frame.size.height = height;
     self.frame = frame;
 }
-- (CGFloat)yzh_centerX {
-    return self.yzh_x + self.yzh_width / 2;
+- (CGFloat)centerX {
+    return self.x + self.width / 2;
 }
-- (void)setYzh_centerX:(CGFloat)yzh_centerX {
-    self.yzh_x = yzh_centerX - self.yzh_width / 2;
+- (void)setCenterX:(CGFloat)centerX {
+    self.x = centerX - self.width / 2;
 }
-- (CGFloat)yzh_centerY {
-    return self.yzh_y + self.yzh_height / 2;
+- (CGFloat)centerY {
+    return self.y + self.height / 2;
 }
-- (void)setYzh_centerY:(CGFloat)yzh_centerY {
-    self.yzh_y = yzh_centerY - self.yzh_width / 2;
+- (void)setCenterY:(CGFloat)centerY {
+    self.y = centerY - self.width / 2;
 }
 
 //截图
