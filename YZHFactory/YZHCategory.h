@@ -13,6 +13,7 @@
 #import "NSString+YZHCategory.h"
 #import "UIAlertController+YZHCategory.h"
 #import "UIButton+YZHCategory.h"
+#import "UIButton+YZHBadge.h"
 #import "UIColor+YZHCategory.h"
 #import "UIImage+YZHCategory.h"
 #import "UILabel+YZHCategory.h"

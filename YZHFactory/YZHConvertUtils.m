@@ -37,7 +37,7 @@
 + (NSString *)yzh_convertToJsonData:(NSDictionary *)dict
 
 {
-
+    if (!dict) return nil;
     NSError *error;
 
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
