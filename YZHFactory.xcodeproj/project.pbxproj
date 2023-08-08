@@ -48,6 +48,8 @@
 		30CBA6F526E0728D00DDC92E /* YZHTESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBA6F426E0728D00DDC92E /* YZHTESTViewController.m */; };
 		30CBB1CF26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CBB1CD26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30CBB1D026D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBB1CE26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.m */; };
+		30E150DA2A80D385004E35DA /* YZHDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E150D82A80D385004E35DA /* YZHDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30E150DB2A80D385004E35DA /* YZHDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E150D92A80D385004E35DA /* YZHDecimalNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		30CBA6F626E07FB200DDC92E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		30CBB1CD26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+YZHCategory.h"; sourceTree = "<group>"; };
 		30CBB1CE26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+YZHCategory.m"; sourceTree = "<group>"; };
+		30E150D82A80D385004E35DA /* YZHDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZHDecimalNumber.h; sourceTree = "<group>"; };
+		30E150D92A80D385004E35DA /* YZHDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZHDecimalNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			children = (
 				30001A9024EF639A0022BD70 /* YZHConvertUtils.h */,
 				30001A8F24EF639A0022BD70 /* YZHConvertUtils.m */,
+				30E150D82A80D385004E35DA /* YZHDecimalNumber.h */,
+				30E150D92A80D385004E35DA /* YZHDecimalNumber.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B63D45291505E3001B31D2 /* CALayer+YZHCategory.h in Headers */,
+				30E150DA2A80D385004E35DA /* YZHDecimalNumber.h in Headers */,
 				309D750A26DF91DC00F43A28 /* UINavigationController+YZHCategory.h in Headers */,
 				306A57FA25DFB5C700D0A876 /* UIImage+YZHCategory.h in Headers */,
 				30CBB1CF26D5EFAD00C7F6D7 /* UIAlertController+YZHCategory.h in Headers */,
@@ -458,6 +465,7 @@
 			files = (
 				3053C9BB262FCC3E00A6A88C /* NSDate+YZHCategory.m in Sources */,
 				30839C4B25BEBEDE0025CA14 /* UIView+YZHCategory.m in Sources */,
+				30E150DB2A80D385004E35DA /* YZHDecimalNumber.m in Sources */,
 				30839C6325BFAC7E0025CA14 /* UIColor+YZHCategory.m in Sources */,
 				30839C6C25BFFB2F0025CA14 /* UILabel+YZHCategory.m in Sources */,
 				30001A9824EF63AB0022BD70 /* YZHFileManager.m in Sources */,

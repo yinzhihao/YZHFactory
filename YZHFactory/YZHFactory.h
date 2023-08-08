@@ -20,4 +20,4 @@ FOUNDATION_EXPORT const unsigned char YZHFactoryVersionString[];
 #import <YZHFactory/YZHConvertUtils.h>
 #import <YZHFactory/YZHDefine.h>
 #import <YZHFactory/YZHFileManager.h>
-
+#import <YZHFactory/YZHDecimalNumber.h>

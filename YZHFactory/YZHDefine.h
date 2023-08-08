@@ -99,6 +99,7 @@
 #define NAVIGATION_BAR_HEIGHT           44.0f
 #define TABBAR_HEIGHT                   (IS_IPHONEX_SET ? 83.0f : 49.0f)
 #define SAFE_BOTTOM_HEIGHT              (IS_IPHONEX_SET ? 34.0f : 0)
+#define TOP_MARGIN                      (STATUS_BAR_HEIGHT + NAVIGATION_BAR_HEIGHT)
 
 #pragma mark - 搜索栏高度
 
