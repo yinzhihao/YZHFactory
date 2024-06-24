@@ -59,14 +59,20 @@
             break;
     }
     
-    if (@available(iOS 15.0, *)) {
-        UINavigationBarAppearance *navAppearance = [[UINavigationBarAppearance alloc] init];
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *navAppearance = self.navigationBar.standardAppearance;
+        if (!navAppearance) {
+            navAppearance = [[UINavigationBarAppearance alloc] init];
+        }
         navAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:_titleColor};
         navAppearance.backgroundColor = _barTintColor;
         navAppearance.shadowColor = UIColor.clearColor;
+//        [navAppearance configureWithDefaultBackground];
+//        navAppearance.backgroundEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+        navAppearance.backgroundEffect = nil;
         self.navigationBar.standardAppearance = navAppearance;
         self.navigationBar.scrollEdgeAppearance = navAppearance;
-        self.navigationBar.translucent = NO;
+//        self.navigationBar.translucent = translucent;
         self.navigationBar.tintColor = _tintColor;
     } else {
         // Fallback on earlier versions
@@ -74,7 +80,7 @@
         [self.navigationBar setBarTintColor:_barTintColor];
         [self.navigationBar setTintColor:_tintColor];
         [self.navigationBar setShadowImage:_shadowImage];
-        self.navigationBar.translucent = NO;
+//        self.navigationBar.translucent = translucent;
     }
 }
 
