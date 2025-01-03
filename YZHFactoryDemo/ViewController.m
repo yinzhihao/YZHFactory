@@ -82,13 +82,13 @@
             break;
         case 1:
         {
-            NSString *string = [[NSDate date] yzh_toFormatString:@"YYYY-MM-dd HH:mm:ss"];
+            NSString *string = [[NSDate date] yzh_toFormatString:@"yyyy-MM-dd HH:mm:ss"];
             YZHLog(@"string = %@", string);
         }
             break;
         case 2:
         {
-            NSDate *date = [@"2021-09-02 15:12:30" yzh_toDate:@"YYYY-MM-dd HH:mm:ss"];
+            NSDate *date = [@"2021-09-02 15:12:30" yzh_toDate:@"yyyy-MM-dd HH:mm:ss"];
             YZHLog(@"date = %@", date);
         }
             break;
